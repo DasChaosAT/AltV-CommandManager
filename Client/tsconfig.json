@@ -1,0 +1,33 @@
+﻿{
+  "compilerOptions": {
+    "lib": [
+      "esnext"
+    ],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": ".output",
+    "rootDir": ".",
+    "baseUrl": "./",
+
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "preserveConstEnums": true,
+
+    "alwaysStrict": true,
+    "noEmitOnError": true,
+    "sourceMap": false
+  },
+  "include": [
+    "scripts/*.ts",
+    "client.ts", "../Server/Objects/.cs"
+  ],
+  "exclude": [
+    "alt",
+    "natives"
+  ],
+  "compileOnSave": true
+}

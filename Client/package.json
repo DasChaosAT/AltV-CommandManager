@@ -1,0 +1,13 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "description": "Client",
+  "main": "index.mjs",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14"
+  },
+  "dependencies": {}
+}

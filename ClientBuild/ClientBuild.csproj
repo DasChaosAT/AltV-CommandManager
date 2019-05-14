@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="set outDirClient=$(SolutionDir)output\client\&#xD;&#xA;set projectDirClient=$(SolutionDir)Client\&#xD;&#xA;&#xD;&#xA;rd /s /q %outDirClient%&#xD;&#xA;md %outDirClient%&#xD;&#xA;xcopy %projectDirClient%.output\* %outDirClient% /s /y /EXCLUDE:%projectDirClient%exclude.cfg&#xD;&#xA;xcopy %projectDirClient%webview\* %outDirClient%webview\* /s /y /EXCLUDE:%projectDirClient%exclude.cfg&#xD;&#xA;xcopy %projectDirClient%resource.cfg %outDirClient% /s /y /EXCLUDE:%projectDirClient%exclude.cfg&#xD;&#xA;xcopy %projectDirClient%index.mjs %outDirClient% /s /y /EXCLUDE:%projectDirClient%exclude.cfg&#xD;&#xA;rd /s /q xcopy %projectDirClient%.output\&#xD;&#xA;" />
+  </Target>
+
+</Project>
