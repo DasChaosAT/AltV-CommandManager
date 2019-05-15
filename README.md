@@ -3,7 +3,7 @@ This is a CommandManager for AltV, written in C# (Server) and Typescript (Client
 
 ## Build
 To Build correctly you have to install this extension https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CommandTaskRunner or use the .vsix file in the build tools.
-- Client: Rebuild the Project "ClientBuild"
+- Client: Build the Project "Build" and follow the steps before
 - Server: Build the Project "Server"
 
 The builded files can be found in the folder "output" and just needed to be copied into resource-folder.
