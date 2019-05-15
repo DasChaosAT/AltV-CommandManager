@@ -7,11 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csp
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Client", "Client\Client.njsproj", "{B5EEF91F-9BFC-4DAD-8359-FC4EA8B67C90}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientBuild", "ClientBuild\ClientBuild.csproj", "{BDE7098C-4E63-4BA9-A26D-35EB73D96BB8}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B5EEF91F-9BFC-4DAD-8359-FC4EA8B67C90} = {B5EEF91F-9BFC-4DAD-8359-FC4EA8B67C90}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,10 +21,6 @@ Global
 		{B5EEF91F-9BFC-4DAD-8359-FC4EA8B67C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5EEF91F-9BFC-4DAD-8359-FC4EA8B67C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5EEF91F-9BFC-4DAD-8359-FC4EA8B67C90}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BDE7098C-4E63-4BA9-A26D-35EB73D96BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDE7098C-4E63-4BA9-A26D-35EB73D96BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDE7098C-4E63-4BA9-A26D-35EB73D96BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDE7098C-4E63-4BA9-A26D-35EB73D96BB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -52,7 +52,11 @@
     <TypeScriptSourceRoot />
   </PropertyGroup>
   <ItemGroup>
+    <None Include="commands.json" />
     <Content Include="exclude.cfg" />
+    <Content Include="postBuild.bat">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="tsconfig.json" />
     <Content Include="webview\.gitkeep">
       <SubType>Code</SubType>
