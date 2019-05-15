@@ -2,6 +2,7 @@
 This is a CommandManager for AltV, written in C# (Server) and Typescript (Client). Commands can be entered via Server- or Client-Console. All Commands are send to the server to be verified and to check the permission needed for the command.
 
 ## Build
+To Build correctly you have to install this extension https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CommandTaskRunner or use the .vsix file in the build tools.
 - Client: Rebuild the Project "ClientBuild"
 - Server: Build the Project "Server"
 

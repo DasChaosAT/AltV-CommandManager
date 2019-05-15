@@ -52,9 +52,10 @@
     <TypeScriptSourceRoot />
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="buildTools\Command_Task_Runner_v1.2.41.vsix" />
     <None Include="commands.json" />
     <Content Include="exclude.cfg" />
-    <Content Include="postBuild.bat">
+    <Content Include="buildTools\postBuild.bat">
       <SubType>Code</SubType>
     </Content>
     <Content Include="tsconfig.json" />
@@ -74,6 +75,7 @@
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="buildTools\" />
     <Folder Include="scripts\" />
     <Folder Include="typings\" />
     <Folder Include="webview\" />
