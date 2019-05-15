@@ -6,4 +6,5 @@
       "arguments": "/c buildTools\\postBuild.bat"
     }
   }
+, "-vs-binding":{"AfterBuild":["postBuild"]}
 }
